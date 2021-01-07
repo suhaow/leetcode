@@ -28,3 +28,4 @@ func connectTwoNode(node1 *Node, node2 *Node) {
 	//连接跨越父节点的两个子节点
 	connectTwoNode(node1.Right, node2.Left)
 }
+
