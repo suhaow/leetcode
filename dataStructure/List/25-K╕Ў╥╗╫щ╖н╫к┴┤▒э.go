@@ -1,4 +1,4 @@
-package main
+package List
 
 /*
 leetcode: https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
@@ -8,6 +8,7 @@ note: https://labuladong.gitee.io/algo/高频面试系列/k个一组反转链表
 /*
 	反转链表
 */
+
 func reverse(head *ListNode) *ListNode {
 	var pre *ListNode
 	cur, next := head, head
@@ -67,24 +68,24 @@ func reverseGroup(head *ListNode, k int) *ListNode {
 	return newHead
 }
 
-func main() {
-	// 1->2->3->4->5->nil
-	head := &ListNode{
-		Val: 1,
-	}
-	cur := head
-	for i := 2; i <= 5; i++ {
-		node := &ListNode{
-			Val: i,
-		}
-		cur.Next = node
-		cur = cur.Next
-	}
-
-	// 5->4->3->2->1->nil
-	//newHead := reverse(head)
-
-	// 2->1->4->3->5
-	newHead := reverseGroup(head, 2)
-	printList(newHead)
-}
+//func main() {
+//	// 1->2->3->4->5->nil
+//	head := &ListNode{
+//		Val: 1,
+//	}
+//	cur := head
+//	for i := 2; i <= 5; i++ {
+//		node := &ListNode{
+//			Val: i,
+//		}
+//		cur.Next = node
+//		cur = cur.Next
+//	}
+//
+//	// 5->4->3->2->1->nil
+//	//newHead := reverse(head)
+//
+//	// 2->1->4->3->5
+//	newHead := reverseGroup(head, 2)
+//	printList(newHead)
+//}

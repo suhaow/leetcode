@@ -1,4 +1,4 @@
-package main
+package List
 
 /*
 leetcode: https://leetcode-cn.com/problems/palindrome-linked-list/
@@ -87,22 +87,22 @@ func isPalindrome(head *ListNode) bool {
 	return true
 }
 
-func main() {
-	// 1->2->3->4->5->nil
-	head := &ListNode{
-		Val: 1,
-	}
-	val := []int{2, 3, 2, 1}
-
-	cur := head
-	for _, v := range val {
-		node := &ListNode{
-			Val: v,
-		}
-		cur.Next = node
-		cur = cur.Next
-	}
-
-	printList(head)
-	println(isPalindrome(head))
-}
+//func main() {
+//	// 1->2->3->4->5->nil
+//	head := &ListNode{
+//		Val: 1,
+//	}
+//	val := []int{2, 3, 2, 1}
+//
+//	cur := head
+//	for _, v := range val {
+//		node := &ListNode{
+//			Val: v,
+//		}
+//		cur.Next = node
+//		cur = cur.Next
+//	}
+//
+//	printList(head)
+//	println(isPalindrome(head))
+//}

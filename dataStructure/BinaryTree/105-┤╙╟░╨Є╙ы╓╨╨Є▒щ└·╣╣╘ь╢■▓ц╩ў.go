@@ -1,4 +1,4 @@
-package main
+package BinaryTree
 
 /*
 note:https://mp.weixin.qq.com/s/OlpaDhPDTJlQ5MJ8tsARlA

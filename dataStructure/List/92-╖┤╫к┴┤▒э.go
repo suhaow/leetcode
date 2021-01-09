@@ -1,4 +1,6 @@
-package main
+package List
+
+//https://labuladong.gitee.io/algo/数据结构系列/递归反转链表的一部分.html
 
 type ListNode struct {
 	Val  int
@@ -59,26 +61,26 @@ func reverseBetween(head *ListNode, m int, n int) *ListNode {
 	return head
 }
 
-func main() {
-	// 1->2->3->4->5->nil
-	head := &ListNode{
-		Val: 1,
-	}
-	cur := head
-	for i := 2; i <= 5; i++ {
-		node := &ListNode{
-			Val: i,
-		}
-		cur.Next = node
-		cur = cur.Next
-	}
-
-	// 5->4->3->2->1->nil
-	//newHead := reverseAll(head)
-
-	// 3->2->1->4->5
-	//newHead := reverseN(head, 3)
-
-	newHead := reverseBetween(head, 2, 3)
-	printList(newHead)
-}
+//func main() {
+//	// 1->2->3->4->5->nil
+//	head := &ListNode{
+//		Val: 1,
+//	}
+//	cur := head
+//	for i := 2; i <= 5; i++ {
+//		node := &ListNode{
+//			Val: i,
+//		}
+//		cur.Next = node
+//		cur = cur.Next
+//	}
+//
+//	// 5->4->3->2->1->nil
+//	//newHead := reverseAll(head)
+//
+//	// 3->2->1->4->5
+//	//newHead := reverseN(head, 3)
+//
+//	newHead := reverseBetween(head, 2, 3)
+//	printList(newHead)
+//}
